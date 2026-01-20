@@ -253,6 +253,53 @@ header hr {
 
 /* About section end */
 
+/* Why choose section start */
+#why-choose {
+    padding: 7.5rem 1.25rem;
+}
+
+.why-choose-content {
+    text-align: center;
+}
+
+.why-choose-content h2 {
+    margin-bottom: 2.5rem;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
+}
+
+.a {
+    grid-row: span 2;
+}
+
+.b,
+.c,
+.d {
+    grid-column: span 2;
+}
+
+.card-rectangle {
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.c-1 {
+    padding-top: 6.7rem;
+    padding-bottom: 6.7rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+/* Why choose section end */
+
 
 /* Media Query Responsive CSS */
 @media screen and (max-width: 576px) {
@@ -310,7 +357,14 @@ header hr {
         margin-bottom: 2.5rem;
     }
 
+    
+    .layout {
+        display: block;
+    }
 
+    .card-rectangle {
+        padding: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -329,4 +383,11 @@ header hr {
         gap: 1rem;
     }
 
+    .layout {
+        display: block;
+    }
+
+    .card-rectangle {
+        padding: 1.5rem;
+    }
 }
