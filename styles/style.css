@@ -129,6 +129,80 @@ header hr {
 
 /* Navbar end */
 
+
+
+/* Banner start */
+.banner {
+    background: url("../assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.banner-content {
+    padding-top: 6.3125rem;
+    padding-bottom: 6.3125rem;
+    text-align: center;
+    width: 100%;
+}
+
+.banner-img {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2.6rem;
+}
+
+.banner-img p {
+    position: absolute;
+    padding: 0.5rem 1rem;
+    background-color: #00FF88;
+    border: none;
+    border-radius: 62.5rem;
+    top: 2%;
+    left: 70%;
+    z-index: 2;
+    box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
+}
+
+.banner-img-1 {
+    display: block;
+    width: 100%;
+}
+
+.banner-img-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.banner-content p {
+    margin-bottom: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.btn-2 {
+    background: transparent;
+    border: 1px solid #00FF88;
+}
+
+/* Banner end */
+
+
 /* Media Query Responsive CSS */
 @media screen and (max-width: 576px) {
 
@@ -140,6 +214,30 @@ header hr {
     .hamburger {
         display: block;
     }
+
+    
+    .banner-img {
+        width: 60%;
+    }
+
+    .banner-img-2 {
+        width: 30%;
+    }
+
+    .banner-content {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+
+    }
+
+    .banner {
+        background-size: cover;
+    }
+
+    .banner-img {
+        margin-bottom: 1.5rem;
+    }
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
